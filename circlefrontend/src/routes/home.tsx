@@ -1,4 +1,6 @@
+import { Button } from "@chakra-ui/react";
+
 export function HomeRoute() {
-    return <h1>HomeRoute</h1>;
+    return <Button colorScheme="teal" backgroundColor={"brand.primary"}>Click Me!</Button>
   }
   
