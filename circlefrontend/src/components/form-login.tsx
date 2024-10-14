@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { FormLoginState } from "../types/form";
+import { FormLoginState } from "@/types/form";
+import { useCallback, useState } from "react";
 
 export function FormLogin() {
   const [form, setForm] = useState<FormLoginState>({
@@ -7,15 +7,20 @@ export function FormLogin() {
     password: "",
   });
 
-  function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
-    const value = event.target.value;
-    const name = event.target.name;
+  const handleChange = useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>) => {
+      const value = event.target.value;
+      const name = event.target.name;
 
-    setForm({
-      ...form, // spread operator
-      [name]: value,
-    });
-  }
+      setForm({
+        ...form, // spread operator
+        [name]: value,
+      });
+
+      console.log(form);
+    },
+    [form]
+  );
 
   return (
     <>

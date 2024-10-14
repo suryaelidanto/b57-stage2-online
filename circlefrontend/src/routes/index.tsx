@@ -8,6 +8,7 @@ import { ForgotPasswordRoute } from "./forgot-password";
 import { FollowsRoute } from "./follows";
 import { DetailThreadRoute } from "./detail-thread";
 import { SearchRoute } from "./search";
+import { FormLogin } from "@/components/form-login";
 
 export const router = createBrowserRouter([
   {
@@ -45,5 +46,9 @@ export const router = createBrowserRouter([
   {
     path: "/detail/:id",
     element: <DetailThreadRoute />,
+  },
+  {
+    path: "/test",
+    element: <FormLogin />,
   },
 ]);

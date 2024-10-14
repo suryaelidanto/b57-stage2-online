@@ -1,5 +1,5 @@
-import { useFetchData } from "../hooks/use-fetch-data";
-import { JSONPlaceholderPost } from "../types/jsonplaceholder/post";
+import { useFetchData } from "@/hooks/use-fetch-data";
+import { JSONPlaceholderPost } from "@/types/jsonplaceholder/post";
 
 export function PostList() {
   const { datas: posts, error } = useFetchData<JSONPlaceholderPost>(

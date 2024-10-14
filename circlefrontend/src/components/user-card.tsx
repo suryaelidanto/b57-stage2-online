@@ -1,5 +1,5 @@
-import { useFetchData } from "../hooks/use-fetch-data";
-import { JSONPlaceholderUser } from "../types/jsonplaceholder/user";
+import { useFetchData } from "@/hooks/use-fetch-data";
+import { JSONPlaceholderUser } from "@/types/jsonplaceholder/user";
 
 export function UserCards() {
   const { datas: users, error } = useFetchData<JSONPlaceholderUser>(
