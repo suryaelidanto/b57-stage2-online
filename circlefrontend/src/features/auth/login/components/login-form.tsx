@@ -1,34 +1,11 @@
+import Logo from "@/assets/logo.svg";
+import { GreenButton } from "@/components/green-button";
 import { Box, Link as ChakraLink, Image, Input, Text } from "@chakra-ui/react";
 import { Link as ReactRouterLink } from "react-router-dom";
-import { GreenButton } from "@/components/green-button";
-import Logo from "@/assets/logo.svg";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useCallback } from "react";
-
-const loginFormSchema = z.object({
-  emailOrUsername: z.string().min(3),
-  password: z.string().min(6),
-});
-
-type LoginForm = z.infer<typeof loginFormSchema>;
+import { useLoginForm } from "../hooks/useLoginForm";
 
 export function LoginForm() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<LoginForm>({
-    mode: "onSubmit",
-    resolver: zodResolver(loginFormSchema),
-  });
-
-  const onSubmit = useCallback((data: LoginForm) => {
-    // proses bikin ngeleq intinya
-
-    console.log(data);
-  }, []);
+  const { register, onSubmit, handleSubmit, errors } = useLoginForm();
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
@@ -55,6 +32,7 @@ export function LoginForm() {
         ) : null}
 
         <Input
+          type="password"
           placeholder="Password"
           {...register("password")}
           color={"white"}
