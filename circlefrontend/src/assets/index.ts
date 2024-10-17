@@ -1,7 +1,12 @@
-import Follows from "./follows.svg";
-import Home from "./home.svg";
-import Profile from "./profile.svg";
-import Search from "./search.svg";
-import Logo from "./logo.svg";
+// Icons
+import Follows from "./icons/follows.svg";
+import Home from "./icons/home.svg";
+import HomeOutline from "./icons/home-outline.svg";
+import Profile from "./icons/profile.svg";
+import Search from "./icons/search.svg";
+import Logo from "./icons/logo.svg";
 
-export { Follows, Home, Logo, Search, Profile };
+// Image
+import BGProfileCover from "./img/cover.png";
+
+export { Follows, Home, Logo, Search, Profile, BGProfileCover, HomeOutline };

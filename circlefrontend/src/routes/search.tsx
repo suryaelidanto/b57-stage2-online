@@ -1,4 +1,5 @@
+import { SearchUser } from "@/features/search/components/search-user";
+
 export function SearchRoute() {
-    return <h1>SearchRoute</h1>;
-  }
-  
+  return <SearchUser />;
+}

@@ -1,4 +1,4 @@
-import Logo from "@/assets/logo.svg";
+import { Logo } from "@/assets";
 import { GreenButton } from "@/components/green-button";
 import { Box, Link as ChakraLink, Image, Input, Text } from "@chakra-ui/react";
 import { Link as ReactRouterLink } from "react-router-dom";

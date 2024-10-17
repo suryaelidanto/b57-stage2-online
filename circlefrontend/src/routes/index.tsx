@@ -1,4 +1,4 @@
-import { AppLayout } from "@/layouts/app-layout";
+import { AppLayout } from "@/layouts/app/layout";
 import { createBrowserRouter } from "react-router-dom";
 import { DetailThreadRoute } from "./detail-thread";
 import { FollowsRoute } from "./follows";
