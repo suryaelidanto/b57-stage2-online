@@ -3,6 +3,7 @@ import { extendTheme, ThemeOverride } from "@chakra-ui/react";
 const theme: ThemeOverride = {
   colors: {
     brand: {
+      background : "#1D1D1D",
       primary: {
         50: "#E5F6E7",
         100: "#C6EFD5",

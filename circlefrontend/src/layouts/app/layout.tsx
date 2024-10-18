@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import { Outlet } from "react-router-dom";
-import { LeftBar } from "./left-bar";
-import { RightBar } from "./right-bar";
+import { LeftBar } from "./components/left-bar";
+import { RightBar } from "./components/right-bar";
 
 export function AppLayout() {
   return (

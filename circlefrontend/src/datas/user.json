@@ -1,28 +1,128 @@
 [
   {
-    "email": "surya@gmail.com",
-    "username": "surya",
+    "email": "budi@gmail.com",
+    "username": "budi",
     "password": "12345678",
     "profile": {
-      "fullName": "surya",
-      "address": "Jln. Depok",
-      "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL5m2gr2lMb1huhMFwIR41jrDU5ZOxKydgEw&s",
-      "bio": "Saya adalah seorang anak gembala"
+      "fullName": "Budi Santoso",
+      "address": "Jln. Merdeka",
+      "profilePicture": "https://example.com/profile/budi.jpg",
+      "bio": "Pecinta alam dan petualangan."
     },
-    "followers": 200,
-    "following": 100
+    "followers": 150,
+    "following": 75,
+    "isFollowed": true
   },
   {
-    "email": "asep@gmail.com",
-    "username": "asep",
+    "email": "dina@gmail.com",
+    "username": "dina",
     "password": "12345678",
     "profile": {
-      "fullName": "asep galau",
-      "address": "Jln. Kenangan",
-      "profilePicture": "https://upload.wikimedia.org/wikipedia/id/3/36/Naruto_Uzumaki.png",
-      "bio": "Saya seorang fullstack developer"
+      "fullName": "Dina Melati",
+      "address": "Jln. Harapan",
+      "profilePicture": "https://example.com/profile/dina.jpg",
+      "bio": "Penggemar musik dan seni."
+    },
+    "followers": 220,
+    "following": 80,
+    "isFollowed": false
+  },
+  {
+    "email": "eko@gmail.com",
+    "username": "eko",
+    "password": "12345678",
+    "profile": {
+      "fullName": "Eko Prabowo",
+      "address": "Jln. Cinta",
+      "profilePicture": "https://example.com/profile/eko.jpg",
+      "bio": "Software engineer yang menyukai teknologi."
+    },
+    "followers": 180,
+    "following": 60,
+    "isFollowed": true
+  },
+  {
+    "email": "fina@gmail.com",
+    "username": "fina",
+    "password": "12345678",
+    "profile": {
+      "fullName": "Fina Rahmawati",
+      "address": "Jln. Pahlawan",
+      "profilePicture": "https://example.com/profile/fina.jpg",
+      "bio": "Suka menulis dan berbagi cerita."
+    },
+    "followers": 250,
+    "following": 90,
+    "isFollowed": true
+  },
+  {
+    "email": "gilang@gmail.com",
+    "username": "gilang",
+    "password": "12345678",
+    "profile": {
+      "fullName": "Gilang Saputra",
+      "address": "Jln. Bahagia",
+      "profilePicture": "https://example.com/profile/gilang.jpg",
+      "bio": "Olahragawan dan motivator."
     },
     "followers": 300,
-    "following": 50
+    "following": 100,
+    "isFollowed": false
+  },
+  {
+    "email": "hanna@gmail.com",
+    "username": "hanna",
+    "password": "12345678",
+    "profile": {
+      "fullName": "Hanna Lestari",
+      "address": "Jln. Sejahtera",
+      "profilePicture": "https://example.com/profile/hanna.jpg",
+      "bio": "Pencinta hewan dan alam."
+    },
+    "followers": 200,
+    "following": 70,
+    "isFollowed": true
+  },
+  {
+    "email": "indra@gmail.com",
+    "username": "indra",
+    "password": "12345678",
+    "profile": {
+      "fullName": "Indra Wijaya",
+      "address": "Jln. Inspirasi",
+      "profilePicture": "https://example.com/profile/indra.jpg",
+      "bio": "Guru dan pelatih olahraga."
+    },
+    "followers": 230,
+    "following": 85,
+    "isFollowed": false
+  },
+  {
+    "email": "joko@gmail.com",
+    "username": "joko",
+    "password": "12345678",
+    "profile": {
+      "fullName": "Joko Santosa",
+      "address": "Jln. Kerja Keras",
+      "profilePicture": "https://example.com/profile/joko.jpg",
+      "bio": "Pengusaha muda yang ambisius."
+    },
+    "followers": 350,
+    "following": 120,
+    "isFollowed": true
+  },
+  {
+    "email": "lina@gmail.com",
+    "username": "lina",
+    "password": "12345678",
+    "profile": {
+      "fullName": "Lina Anisa",
+      "address": "Jln. Rindu",
+      "profilePicture": "https://example.com/profile/lina.jpg",
+      "bio": "Suka memasak dan berbagi resep."
+    },
+    "followers": 160,
+    "following": 50,
+    "isFollowed": false
   }
 ]

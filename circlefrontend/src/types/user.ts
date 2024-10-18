@@ -5,6 +5,7 @@ export interface User {
   profile: Profile;
   followers: number;
   following: number;
+  isFollowed: boolean;
 }
 
 export interface Profile {
