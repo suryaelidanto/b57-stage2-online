@@ -27,8 +27,9 @@ export function LeftBar() {
           w={"252.75px"}
           gap={"6px"}
         >
-          {leftBarMenu.map((menu) => (
+          {leftBarMenu.map((menu, index) => (
             <Button
+              key={index}
               onClick={() => {
                 navigate(menu.path);
               }}

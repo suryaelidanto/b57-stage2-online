@@ -4,6 +4,8 @@ import { LeftBar } from "./components/left-bar";
 import { RightBar } from "./components/right-bar";
 
 export function AppLayout() {
+  //TODO: make check for token from cookies
+
   return (
     <Box display={"flex"}>
       <LeftBar />

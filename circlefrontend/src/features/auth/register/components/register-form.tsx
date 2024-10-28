@@ -2,10 +2,10 @@ import { Logo } from "@/assets";
 import { GreenButton } from "@/components/green-button";
 import { Box, Link as ChakraLink, Image, Input, Text } from "@chakra-ui/react";
 import { Link as ReactRouterLink } from "react-router-dom";
-import { useLoginForm } from "../hooks/use-login-form";
+import { useRegisterForm } from "../hooks/use-register-form";
 
-export function LoginForm() {
-  const { register, onSubmit, handleSubmit, errors } = useLoginForm();
+export function RegisterForm() {
+  const { register, onSubmit, handleSubmit, errors } = useRegisterForm();
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
@@ -17,17 +17,29 @@ export function LoginForm() {
       >
         <Image src={Logo} width={"100px"} />
         <Text as={"h1"} fontSize={"2xl"} color="white" fontWeight={"bold"}>
-          Login to Circle
+          Register to Circle
         </Text>
         <Input
-          placeholder="Email/Username"
-          {...register("emailOrUsername")}
+          placeholder="Full Name"
+          {...register("name")}
           color={"white"}
         />
 
-        {errors.emailOrUsername ? (
+        {errors.name ? (
           <Text as={"span"} color={"red"}>
-            {errors.emailOrUsername.message}
+            {errors.name.message}
+          </Text>
+        ) : null}
+
+        <Input
+          placeholder="Email"
+          {...register("email")}
+          color={"white"}
+        />
+
+        {errors.email ? (
+          <Text as={"span"} color={"red"}>
+            {errors.email.message}
           </Text>
         ) : null}
 
@@ -44,16 +56,20 @@ export function LoginForm() {
           </Text>
         ) : null}
 
+        <Input placeholder="Address" {...register("address")} color={"white"} />
+
+        {errors.address ? (
+          <Text as={"span"} color={"red"}>
+            {errors.address.message}
+          </Text>
+        ) : null}
+
         <Box display={"flex"} justifyContent={"flex-end"}>
-          <ChakraLink
-            as={ReactRouterLink}
-            to={"/forgot-password"}
-            color="white"
-          >
-            Forgot Password?
+          <ChakraLink as={ReactRouterLink} to={"/login"} color="white">
+            Already have account?
           </ChakraLink>
         </Box>
-        <GreenButton type="submit">Login</GreenButton>
+        <GreenButton type="submit">Register</GreenButton>
       </Box>
     </form>
   );
