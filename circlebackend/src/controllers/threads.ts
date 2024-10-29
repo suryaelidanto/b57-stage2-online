@@ -10,6 +10,8 @@ export const createThread = async (req: Request, res: Response) => {
       const { body, file } = req;
       const user = res.locals.user;
 
+      console.log("user", user)
+
       body.userId = user.id;
 
       const thread = await threadServices.createThread(body, file);

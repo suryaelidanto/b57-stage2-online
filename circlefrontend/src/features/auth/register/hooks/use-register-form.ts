@@ -1,6 +1,6 @@
 import { api } from "@/libs/api";
 // import { useAuthStore } from "@/store/auth";
-import { RegisterForm, registerFormSchema } from "@/utils/schemas/register";
+import { RegisterForm, registerFormSchema } from "@/utils/schemas/auth/register";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useCallback } from "react";
 import { useForm } from "react-hook-form";

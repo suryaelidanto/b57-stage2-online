@@ -5,10 +5,10 @@ import { upload } from "../../middlewares/file-upload";
 const threadRouter = Router();
 
 threadRouter.post(
-   "/",
-
-   upload.single("file"),
-   threadController.createThread
+  "/",
+  authentication,
+  upload.single("file"),
+  threadController.createThread
 );
 
 threadRouter.get("/", threadController.getThreads);

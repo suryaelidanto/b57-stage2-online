@@ -1,7 +1,7 @@
 import fakeUser from "@/datas/user.json";
 import { useAuthStore } from "@/store/auth";
 import { User } from "@/types/user";
-import { LoginForm, loginFormSchema } from "@/utils/schemas/login";
+import { LoginForm, loginFormSchema } from "@/utils/schemas/auth/login";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useCallback } from "react";
 import { useForm } from "react-hook-form";

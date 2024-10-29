@@ -27,10 +27,7 @@ export const authentication = (
       return;
    }
 
-   (req as any).user = decoded
-
-   // res.locals.user = decoded
-   // res.locals.yanglain = "asdfasdf"
+   res.locals.user = decoded
 
    next();
 };
